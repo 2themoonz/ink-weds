@@ -1,0 +1,15 @@
+org: ethanp
+app: ink-weds
+service: ink-weds
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  hello:
+    handler: handler.hello
+
+plugins:
+  - serverless-esbuild
